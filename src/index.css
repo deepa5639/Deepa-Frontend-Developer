@@ -1,13 +1,103 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+:root {
+  --primary-color: black;
+  --secondary-color: blue;
+  --font-family: "Poppins", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+body,
+button {
+  font-family: var(--font-family);
+}
+
+::-webkit-scrollbar {
+  background-color: var(--primary-color);
+  width: 0.3rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--secondary-color);
+}
+
+@media screen and (min-width: 280px) and (max-width: 1080px) {
+  body::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.fioxIa .home .content {
+  padding-left: 26px !important;
+  position: relative !important;
+  bottom: 40px !important;
+}
+
+.close {
+  color: #000;
+}
+
+.close:hover {
+  color: #000;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #000;
+}
+
+.jiSxIS .home .content {
+  padding-left: 3rem !important;
+}
+
+.jiSxIS .info {
+  background-color: blue !important;
+}
+
+.jvunyK a {
+  background-color: blue !important;
+}
+
+.doVdBY .links ul .active a {
+  border-bottom: 0.2rem solid blue !important;
+}
+
+.juqTHq .footer__social__icons svg:hover {
+  color: blue !important;
+}
+
+.page-item.active .page-link {
+  background-color: blue !important;
+  color: #fff !important;
 }
